@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
         fprintf(stderr, "fork failed\n");
         exit(1);
     }
-    if (pid1 == 0) { // chilren
+    if (pid1 == 0) { // children
         char buf[BUF_LEN] = {};
         sprintf(buf, "this is pid(%d) speaking", getpid());
         printf("send msg: %s\n", buf);
